@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center><h3>Admin Signup</h3>
+
+
+
+        <form method="POST" >
+            {% csrf_token %}
+<label>Username</label>
+        <input type="text" name="u" placeholder="Enter Username"><br><br>
+
+    <label>Password</label>
+        <input type="password" name="p" placeholder="Enter Password"><br><br>
+
+        <label>Confirm Password</label>
+        <input type="password" name="cp" placeholder="Enter Confirm Password"><br><br>
+
+        <label>First_name</label>
+        <input type="text" name="f" placeholder="Enter first name"><br><br>
+
+            <label>Last_name</label>
+        <input type="text" name="l" placeholder="Enter Last name"><br><br>
+
+
+        <label>Email</label>
+        <input type="text" name="e" placeholder="Enter Email"><br><br>
+
+
+
+             <label>Place</label>
+        <input type="text" name="pl" placeholder="Enter Place"><br><br>
+
+
+
+             <label>Phone</label>
+        <input type="number" name="n" placeholder="Enter phone"><br><br>
+
+        <input type="submit">
+
+
+
+</form>
+
+    </div>
+</center>
+{% endblock %}

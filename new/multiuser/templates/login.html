@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center><h1>Login here</h1>
+<form method="POST" >
+            {% csrf_token %}
+<label>Username</label>
+        <input type="text" name="u" placeholder="Enter Username"><br><br>
+
+    <label>Password</label>
+        <input type="password" name="p" placeholder="Enter Password"><br><br>
+     <input type="submit">
+
+</form>
+    </center>
+{% endblock %}
